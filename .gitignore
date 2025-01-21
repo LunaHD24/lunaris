@@ -38,5 +38,9 @@ bin/
 ### VS Code ###
 .vscode/
 
+### Github ###
+LICENSE
+README.md
+
 ### Mac OS ###
 .DS_Store
