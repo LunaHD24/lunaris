@@ -10,7 +10,7 @@ public final class LunarisPlugin extends JavaPlugin {
     public void onEnable() {
         instance = this;
         Lunaris.setEffectRegistry(new EffectRegistryImpl());
-        Lunaris.setEffectBuilderProvider(new EffectBuildProviderImpl());
+        Lunaris.setEffectBuilderAccess(new EffectBuilderAccessImpl());
     }
 
 }
