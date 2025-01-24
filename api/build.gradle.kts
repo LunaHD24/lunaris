@@ -24,6 +24,7 @@ tasks {
         options {
             (this as CoreJavadocOptions).addBooleanOption("Xdoclint:none", true)
         }
+        exclude("dev/lunaa/lunaris/test")
     }
 }
 
