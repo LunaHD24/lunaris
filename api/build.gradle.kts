@@ -4,16 +4,11 @@ plugins {
     id("maven-publish")
 }
 
-group = "de.lunaa.lunaris"
+group = "dev.lunaa.lunaris"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 tasks.compileJava {
@@ -44,12 +39,12 @@ java {
 
 publishing {
     publications {
-        create<MavenPublication>("api") {
+        create<MavenPublication>("lunaris-api") {
             from(components["java"])
 
-            groupId = "dev.lunaa.lunaris"
+            groupId = "dev.lunaa"
             artifactId = "lunaris-api"
-            version = "1.0.0"
+            version = "1.0.0-SNAPSHOT"
 
             pom {
                 name.set("Lunaris")

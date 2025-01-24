@@ -3,7 +3,7 @@ plugins {
     id("com.gradleup.shadow") version "8.3.5"
 }
 
-group = "de.lunaa.lunaris"
+group = "dev.lunaa.lunaris"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
@@ -12,8 +12,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
     implementation(project(":api"))
 }
@@ -38,7 +36,7 @@ tasks.shadowJar {
     archiveBaseName.set("Lunaris")
     archiveVersion.set(version.toString())
     archiveClassifier.set("")
-    relocate("de.lunaa.lunaris.api", "de.lunaa.lunaris.internal.api")
+    relocate("dev.lunaa.lunaris.api", "dev.lunaa.lunaris.internal.api")
 }
 
 tasks {
