@@ -44,10 +44,11 @@ public class CustomEffectImpl implements CustomEffect {
         boolean effectOverwritten = false;
         HashMap<CustomEffectType, EffectInfo> effectInfoMap = playerEffectMap.get(uuid);
 
-        if (effectInfoMap.containsKey(effectType)) {
+        if (effectInfoMap != null && effectInfoMap.containsKey(effectType)) {
             Bukkit.getScheduler().cancelTask(effectInfoMap.get(effectType).getTaskId());
             effectOverwritten = true;
         }
+        if (effectInfoMap == null) effectInfoMap = new HashMap<>();
         effectInfoMap.put(effectType, new EffectInfo(duration, level, Integer.MIN_VALUE));
         playerEffectMap.put(uuid, effectInfoMap);
         int taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(LunarisPlugin.instance, () -> {
