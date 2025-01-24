@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 /**
  * Wrapper exception for all exceptions associated to an error in effect handling.

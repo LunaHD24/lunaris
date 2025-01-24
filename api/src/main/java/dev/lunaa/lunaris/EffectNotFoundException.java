@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 /**
  * Thrown when trying to access an effect that's not registered.

@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 /**
  * May be implemented for defining a new custom effect and it's functionality.

@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 public class EffectBuilderAccessImpl implements EffectBuilderAccess {
     @Override

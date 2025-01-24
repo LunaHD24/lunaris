@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

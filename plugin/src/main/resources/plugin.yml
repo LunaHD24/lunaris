@@ -1,5 +1,5 @@
 name: Lunaris
 version: '0.0.1-SNAPSHOT'
-main: de.lunaa.lunaris.LunarisPlugin
+main: dev.lunaa.lunaris.LunarisPlugin
 api-version: '1.21'
 authors: [ lunahd24 ]

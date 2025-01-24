@@ -1,4 +1,4 @@
-package de.lunaa.lunaris;
+package dev.lunaa.lunaris;
 
 /**
  * Used for registering and getting {@link CustomEffectType}'s
