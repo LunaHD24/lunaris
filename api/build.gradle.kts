@@ -26,6 +26,9 @@ tasks {
         }
         exclude("dev/lunaa/lunaris/test")
     }
+    jar {
+        exclude("dev/lunaa/lunaris/test")
+    }
 }
 
 java {
@@ -36,6 +39,14 @@ java {
     targetCompatibility = JavaVersion.VERSION_21
     withSourcesJar()
     withJavadocJar()
+}
+
+sourceSets {
+    main {
+        java {
+            exclude("dev/lunaa/lunaris/test/**")
+        }
+    }
 }
 
 publishing {
